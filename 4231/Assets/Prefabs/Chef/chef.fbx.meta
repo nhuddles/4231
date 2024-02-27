@@ -3,7 +3,12 @@ guid: f875368ade65e1842b6c0a8b72f82955
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chef1.png
+    second: {fileID: 2100000, guid: 090c0b8cb1fa1cf4bb793a2b765c3889, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
