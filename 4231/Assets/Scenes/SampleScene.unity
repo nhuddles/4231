@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -496,6 +496,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
   m_PrefabInstance: {fileID: 1236769761}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1048234935
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048234932}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1048234936
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048234932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.43149924, y: 0.49256957, z: 0.44869518}
+  m_Center: {x: -0.0033205748, y: -0.022326589, z: 0.003721714}
 --- !u!1001 &1236769761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -555,6 +603,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1048234933}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1048234936}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1048234935}
   m_SourcePrefab: {fileID: 100100000, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
 --- !u!1 &1913067511
 GameObject:
@@ -598,6 +652,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1934205066}
   - component: {fileID: 1934205067}
+  - component: {fileID: 1934205069}
+  - component: {fileID: 1934205070}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -635,6 +691,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   animator: {fileID: 847211073}
+--- !u!54 &1934205069
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934205065}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1934205070
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934205065}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.7916801, z: 1}
+  m_Center: {x: 0, y: 0.9680184, z: 0}
 --- !u!1 &1991909622
 GameObject:
   m_ObjectHideFlags: 0
