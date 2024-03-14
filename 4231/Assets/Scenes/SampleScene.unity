@@ -483,7 +483,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 53d42955e3ecf3442b993c0427277e8a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -544,6 +544,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.43149924, y: 0.49256957, z: 0.44869518}
   m_Center: {x: -0.0033205748, y: -0.022326589, z: 0.003721714}
+--- !u!114 &1048234937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048234932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef0baced649fa24f815738741893a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1934205066}
+  chaseRange: 5
+  attackRange: 2
+  chaseSpeed: 3
+  attackDelay: 1
+  patrolRadius: 3
+  patrolSpeed: 2
 --- !u!1001 &1236769761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -554,7 +573,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.015625
+      value: 13.66
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
       propertyPath: m_LocalPosition.y
@@ -562,7 +581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 16.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
       propertyPath: m_LocalRotation.w
@@ -609,6 +628,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1048234935}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1048234937}
   m_SourcePrefab: {fileID: 100100000, guid: 843a6a73c9d22fe4aafdf937b8308154, type: 3}
 --- !u!1 &1913067511
 GameObject:
