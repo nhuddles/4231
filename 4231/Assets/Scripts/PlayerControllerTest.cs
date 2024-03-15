@@ -6,15 +6,22 @@ public class PlayerControllerTest : MonoBehaviour
 {
     public float speed = 5f;
 
-    // Animation Variables
+    #region Animation Variables
     public Animator animator;
     private int pastAttack = 0;
     private int randomAttack = 1;
+    #endregion
+
+    #region Jump Variables
+    public bool isOnGround = true;
+    public float jumpForce = 7f;
+    private Rigidbody playerRB;
+    #endregion
 
 
     void Start()
     {
-   
+        playerRB = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -40,8 +47,8 @@ public class PlayerControllerTest : MonoBehaviour
             animator.ResetTrigger("Dance");
         }
 
-        // Dancing with Spacebar
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Dancing with P
+        if (Input.GetKeyDown(KeyCode.P))
         {
             animator.SetTrigger("Dance");
         }
@@ -53,7 +60,7 @@ public class PlayerControllerTest : MonoBehaviour
             animator.SetTrigger("Death");
         }
 
-        // Move with movement kety + Dash with movement keys + LShift
+        // Move with movement key + Dash with movement keys + LShift
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             animator.SetTrigger("Move");
@@ -64,6 +71,26 @@ public class PlayerControllerTest : MonoBehaviour
         }
         #endregion
 
+        #region Jumping
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        {
+            playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnGround = false;
+            animator.SetTrigger("Jump");
+        }
+
+        #endregion
+
     }
+
+    #region Check if Player Touches Ground
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isOnGround = true;
+        }
+    }
+    #endregion
 
 }
