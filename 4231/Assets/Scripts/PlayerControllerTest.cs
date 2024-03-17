@@ -35,7 +35,7 @@ public class PlayerControllerTest : MonoBehaviour
 
         #region Animation Triggering
         
-        // Attacking with Left-Click
+        /*// Attacking with Left-Click
         if (Input.GetMouseButtonDown(0))
         {
             while (pastAttack == randomAttack) // Ensure there is a different attack animation
@@ -45,7 +45,7 @@ public class PlayerControllerTest : MonoBehaviour
             pastAttack = randomAttack;
             animator.SetInteger("Attack", randomAttack);
             animator.ResetTrigger("Dance");
-        }
+        } */
 
         // Dancing with P
         if (Input.GetKeyDown(KeyCode.P))
