@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RotateToMouse : MonoBehaviour
 {
+    public float rotationThreshold = 10f; // Threshold distance to prevent rotation
+
     void Update()
     {
         // Convert the mouse position to a ray
@@ -16,11 +18,17 @@ public class RotateToMouse : MonoBehaviour
             // Calculate the direction from the object to the hit point
             Vector3 directionToMouse = hit.point - transform.position;
 
-            // Create a rotation that looks along the direction to the mouse
-            Quaternion rotationToMouse = Quaternion.LookRotation(directionToMouse);
+            // Check if the distance is greater than the threshold
+            if (directionToMouse.magnitude > rotationThreshold)
+            {
+                // Create a rotation that looks along the direction to the mouse
+                Quaternion rotationToMouse = Quaternion.LookRotation(directionToMouse);
 
-            // Apply the rotation to the object
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotationToMouse, Time.deltaTime * 5f);
+                // Apply the rotation to the object
+                transform.rotation = Quaternion.Slerp(transform.rotation, rotationToMouse, Time.deltaTime * 5f);
+            }
         }
     }
 }
+
+
