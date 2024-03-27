@@ -114,7 +114,7 @@ public class EnemyAI : MonoBehaviour
         if (Time.time >= nextAttackTime)
         {
             // Do attack action here
-            //Debug.Log("Enemy attacks!");
+            Debug.Log("Enemy attacks!");
             nextAttackTime = Time.time + attackDelay;
         }
     }
