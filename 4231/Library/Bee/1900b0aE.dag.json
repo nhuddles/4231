@@ -377,7 +377,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 107,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.UnityAdditionalFile.txt"
@@ -403,7 +407,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 45188,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.rsp2"
@@ -2438,7 +2446,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 52814,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.UnityAdditionalFile.txt"
@@ -2464,7 +2476,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 92392,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.rsp2"
@@ -3118,7 +3134,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 100556,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.UnityAdditionalFile.txt"
@@ -3144,7 +3164,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 151750,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.rsp2"
@@ -3809,7 +3833,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 159542,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.UnityAdditionalFile.txt"
@@ -3835,7 +3863,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 196218,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.rsp2"
@@ -4406,7 +4438,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 204715,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.UnityAdditionalFile.txt"
@@ -4432,7 +4468,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 238840,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.rsp2"
@@ -4956,7 +4996,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 247440,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.UnityAdditionalFile.txt"
@@ -4982,7 +5026,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 284362,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.rsp2"
@@ -5517,7 +5565,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 292956,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.UnityAdditionalFile.txt"
@@ -5543,7 +5595,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 357587,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.rsp2"
@@ -6325,7 +6381,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 365707,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.UnityAdditionalFile.txt"
@@ -6351,7 +6411,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 402007,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.rsp2"
@@ -6871,7 +6935,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 410038,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.UnityAdditionalFile.txt"
@@ -6897,7 +6965,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 444863,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.rsp2"
@@ -7412,7 +7484,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 453465,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.UnityAdditionalFile.txt"
@@ -7438,7 +7514,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 489111,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.rsp2"
@@ -7955,7 +8035,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 497753,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.UnityAdditionalFile.txt"
@@ -7981,7 +8065,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 532192,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.rsp2"
@@ -8487,7 +8575,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 540800,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.UnityAdditionalFile.txt"
@@ -8513,7 +8605,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 578472,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.rsp2"
@@ -9059,7 +9155,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 586783,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.UnityAdditionalFile.txt"
@@ -9085,7 +9185,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 625533,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.rsp2"
@@ -9645,7 +9749,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 633846,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.UnityAdditionalFile.txt"
@@ -9671,7 +9779,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 668316,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.rsp2"
@@ -10181,7 +10293,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 676891,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.UnityAdditionalFile.txt"
@@ -10207,7 +10323,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 763387,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.rsp2"
@@ -11122,7 +11242,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 771718,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.UnityAdditionalFile.txt"
@@ -11148,7 +11272,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 807908,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.rsp2"
@@ -11669,7 +11797,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 815936,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Cinemachine.UnityAdditionalFile.txt"
@@ -11695,7 +11827,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 856080,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Cinemachine.rsp2"
@@ -12284,7 +12420,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 864471,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.UnityAdditionalFile.txt"
@@ -12310,7 +12450,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 898381,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.rsp2"
@@ -12835,7 +12979,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 907055,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.UnityAdditionalFile.txt"
@@ -12861,7 +13009,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 945235,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.rsp2"
@@ -13458,7 +13610,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 953605,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.UnityAdditionalFile.txt"
@@ -13484,7 +13640,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 991879,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.rsp2"
@@ -14056,7 +14216,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1000533,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.UnityAdditionalFile.txt"
@@ -14082,7 +14246,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1058641,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.rsp2"
@@ -14860,7 +15028,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1067301,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.UnityAdditionalFile.txt"
@@ -14886,7 +15058,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1158098,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.rsp2"
@@ -15880,7 +16056,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1166775,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.UnityAdditionalFile.txt"
@@ -15906,7 +16086,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1248681,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.rsp2"
@@ -16799,7 +16983,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1257108,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.UnityAdditionalFile.txt"
@@ -16825,7 +17013,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1311464,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.rsp2"
@@ -17544,7 +17736,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1320325,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.UnityAdditionalFile.txt"
@@ -17570,7 +17766,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1356237,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.rsp2"
@@ -18096,7 +18296,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1364748,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.UnityAdditionalFile.txt"
@@ -18122,7 +18326,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1405703,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.rsp2"
@@ -18720,7 +18928,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1414465,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.UnityAdditionalFile.txt"
@@ -18746,7 +18958,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1449893,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.rsp2"
@@ -19314,7 +19530,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1458957,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.UnityAdditionalFile.txt"
@@ -19340,7 +19560,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1501190,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.rsp2"
@@ -19930,7 +20154,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1510244,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.UnityAdditionalFile.txt"
@@ -19956,7 +20184,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1544625,
       "PayloadLength": 63,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\kylew\\OneDr",
+=======
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\HEJoh\\OneDr",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.rsp2"
@@ -20501,7 +20733,11 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1553756,
       "PayloadLength": 50,
+<<<<<<< Updated upstream
       "PayloadDebugContentSnippet": "C:\\Users\\kylew\\OneDrive\\Docume",
+=======
+      "PayloadDebugContentSnippet": "C:\\Users\\HEJoh\\OneDrive\\Docume",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.UnityAdditionalFile.txt"
@@ -20513,7 +20749,11 @@
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 1553892,
+<<<<<<< Updated upstream
       "PayloadLength": 33176,
+=======
+      "PayloadLength": 33178,
+>>>>>>> Stashed changes
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -20525,7 +20765,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1587155,
+=======
+      "PayloadOffset": 1587157,
+>>>>>>> Stashed changes
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -20771,6 +21015,7 @@
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
+        "Assets/Scripts/eggSpawner.cs",
         "Assets/Scripts/EnemyAI.cs",
         "Assets/Scripts/FollowMouse.cs",
         "Assets/Scripts/MainMenu.cs",
@@ -21000,7 +21245,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1587251,
+=======
+      "PayloadOffset": 1587253,
+>>>>>>> Stashed changes
       "PayloadLength": 9366,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -22144,7 +22393,11 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "BuildPlayerDataGenerator TypeDb-All",
+<<<<<<< Updated upstream
       "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\ScriptAssemblies\\Cinemachine.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.4\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\ScriptAssemblies\" -s=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.4\\lib\\ReportGenerator\" -s=\"C:\\Users\\kylew\\OneDrive\\Documents\\Github\\4231\\4231\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+=======
+      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\ScriptAssemblies\\Cinemachine.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.4\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.10f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\ScriptAssemblies\" -s=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.4\\lib\\ReportGenerator\" -s=\"C:\\Users\\HEJoh\\OneDrive\\Documents\\GitHub\\4231\\4231\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+>>>>>>> Stashed changes
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -22438,6 +22691,10 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1900b0aE.dag.json",
+<<<<<<< Updated upstream
   "PayloadsFile": "C:/Users/kylew/OneDrive/Documents/Github/4231/4231/Library/Bee/1900b0aE.dag.payloads",
+=======
+  "PayloadsFile": "C:/Users/HEJoh/OneDrive/Documents/GitHub/4231/4231/Library/Bee/1900b0aE.dag.payloads",
+>>>>>>> Stashed changes
   "RelativePathToRoot": "../.."
 }
