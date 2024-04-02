@@ -35,6 +35,26 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+
+        #region Minor Quality of Life Egg Changes
+        
+        // Prevent Jumping with the player
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, 0.5f, gameObject.transform.position.z);
+
+        // Prevent enemy from moving when dead
+        if (gameObject.CompareTag("Dead"))
+        {
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, 0.25f, gameObject.transform.position.z);
+            chaseSpeed = 0f;
+        }
+
+        // Look at the player
+        if (player != null && !gameObject.CompareTag("Dead"))
+        {
+            transform.rotation = Quaternion.LookRotation(transform.position - player.position);
+        }
+        #endregion
+
         // Check the distance between enemy and player
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
