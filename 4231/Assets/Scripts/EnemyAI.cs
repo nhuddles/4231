@@ -39,12 +39,12 @@ public class EnemyAI : MonoBehaviour
         #region Minor Quality of Life Egg Changes
         
         // Prevent Jumping with the player
-        gameObject.transform.position = new Vector3(gameObject.transform.position.x, 0.5f, gameObject.transform.position.z);
-
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, 25.25f, gameObject.transform.position.z);
+        
         // Prevent enemy from moving when dead
         if (gameObject.CompareTag("Dead"))
         {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x, 0.25f, gameObject.transform.position.z);
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, 25.25f, gameObject.transform.position.z);
             chaseSpeed = 0f;
         }
 

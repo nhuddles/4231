@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerControllerTest : MonoBehaviour
 {
     public float speed = 5f;
+    public int playerState = 0;
 
     #region Animation Variables
     public Animator animator;
@@ -81,15 +82,36 @@ public class PlayerControllerTest : MonoBehaviour
 
         #endregion
 
+
     }
 
-    #region Check if Player Touches Ground
+    #region Check if Player Touches Ground or Enemy
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
         }
+        else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            int ctr = 0;
+            playerState = 4;
+            Debug.Log("Player hAs been hit :(");
+            while (ctr < 50)
+            {
+                transform.Translate(Vector3.back * 2.5f * Time.deltaTime);
+                ctr++;
+            }
+            StartCoroutine(WaitOneSecond());
+            
+            
+        }
+    }
+
+    IEnumerator WaitOneSecond()
+    {
+        yield return new WaitForSeconds(1f);
+        playerState = 5;
     }
     #endregion
 

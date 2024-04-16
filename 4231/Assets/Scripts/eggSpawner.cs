@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class eggSpawner : MonoBehaviour
 {
@@ -22,9 +23,21 @@ public class eggSpawner : MonoBehaviour
     public int enemiesKilled = 0;
     public Transform player;
 
+    public int minRange = 5;
+    public int maxRange = 20;
+
+    public TMP_Text waveText;
+    public int totalEnemies;
+    public TMP_Text enemiesLeftText;
+
     IEnumerator TimeBetweenWaves() // Set Time Between Waves
     {
+        waveText.gameObject.SetActive(true);
+        enemiesLeftText.gameObject.SetActive(false);
+        waveText.text = "Wave " + (currentWave + 1);
         yield return new WaitForSeconds(5);
+        enemiesLeftText.gameObject.SetActive(true);
+        enemiesLeftText.text = "Enemies Left: " + totalEnemies;
         SpawnWave();
     }
 
@@ -44,15 +57,25 @@ public class eggSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.position; // Make Spawner Be At Player Location
+        // transform.position = player.position; // Make Spawner Be At Player Location
+        //Debug.Log(waves[currentWave].GetMonsterSpawnList().Length);
+
+        if (currentWave < 5)
+        {
+            totalEnemies = waves[currentWave].GetMonsterSpawnList().Length;
+        }
+
+        enemiesLeftText.text = "Enemies Left: " + (totalEnemies - enemiesKilled);
 
         if (currentWave == 5)
         {
-            Debug.Log("You Did It!");
+            // Debug.Log("You Did It!");
+            waveText.text = "You Win!";
+            enemiesLeftText.gameObject.SetActive(false);
         }
         else if (enemiesKilled == waves[currentWave].GetMonsterSpawnList().Length && currentWave < waves.Length)
         {
-            Debug.Log("Wave " + (currentWave + 1) + " complete!");
+            // Debug.Log("Wave " + (currentWave + 1) + " complete!");
             enemiesKilled = 0;
             currentWave++;
             StartCoroutine(TimeBetweenWaves());
@@ -85,23 +108,23 @@ public class eggSpawner : MonoBehaviour
 
         if (randPos == 1)
         {
-            xLoc = Random.Range(5, 20) + transform.position.x;
-            zLoc = Random.Range(5, 20) + transform.position.z;
+            xLoc = Random.Range(minRange, maxRange) + transform.position.x;
+            zLoc = Random.Range(minRange, maxRange) + transform.position.z;
         }
         else if (randPos == 2)
         {
-            xLoc = Random.Range(-5, -20) + transform.position.x;
-            zLoc = Random.Range(-5, -20) + transform.position.z;
+            xLoc = Random.Range(-minRange, -maxRange) + transform.position.x;
+            zLoc = Random.Range(-minRange, -maxRange) + transform.position.z;
         }
         else if (randPos == 3)
         {
-            xLoc = Random.Range(-5, -20) + transform.position.x;
-            zLoc = Random.Range(5, 20) + transform.position.z;
+            xLoc = Random.Range(-minRange, -maxRange) + transform.position.x;
+            zLoc = Random.Range(minRange, maxRange) + transform.position.z;
         }
         else
         {
-            xLoc = Random.Range(5, 20) + transform.position.x;
-            zLoc = Random.Range(-5, -20) + transform.position.z;
+            xLoc = Random.Range(minRange, maxRange) + transform.position.x;
+            zLoc = Random.Range(-minRange, -maxRange) + transform.position.z;
         }
 
         // float yLoc = transform.position.y;

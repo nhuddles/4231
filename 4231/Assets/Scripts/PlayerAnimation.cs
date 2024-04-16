@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     public Animator animator;
+    public PlayerControllerTest playerController;
+    public Color originalColor;
 
     #region Changing Material/Texture of Chef Variables
     // Texture Changing
@@ -30,8 +32,17 @@ public class PlayerAnimation : MonoBehaviour
     private GameObject chefHead;
     private MeshRenderer chefHeadRenderer;
 
-    #endregion
 
+    // Access Weapon Roller
+    private GameObject chefWeaponRoller;
+    private MeshRenderer chefWeaponRollerRenderer;
+
+    // Access Hat
+    private GameObject chefHat;
+    private MeshRenderer chefHatRenderer;
+
+
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -59,11 +70,24 @@ public class PlayerAnimation : MonoBehaviour
         chefHeadRenderer = chefHead.GetComponent<MeshRenderer>();
         #endregion
 
+        #region Access Parts for Damage
+        // Access Weapon Roller
+        chefWeaponRoller = transform.Find("hands/weapon/cylinder_1").gameObject;
+        chefWeaponRollerRenderer = chefWeaponRoller.GetComponent<MeshRenderer>();
+
+        // Access Hat
+        chefHat = transform.Find("head/hat/cylinder").gameObject;
+        chefHatRenderer = chefHat.GetComponent<MeshRenderer>();
+
+        #endregion
+
+        originalColor = chefHatRenderer.material.color;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         #region Change Material of Chef (See Chef Variants) Press 1 to see Chef 1 ... Press 4 to see Chef 4
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -72,6 +96,8 @@ public class PlayerAnimation : MonoBehaviour
             chefLeftRenderer.material = materials[0]; // Change Left Hand
             chefWeaponHandleRenderer.material = materials[0]; // Change Weapon Handle
             chefHeadRenderer.material = materials[0]; // Change Head
+            chefWeaponRollerRenderer.material = materials[0]; // Change Roller
+            chefHatRenderer.material = materials[0]; // Change Hat
             // Debug.Log("Material changed to Material 1.");
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -81,6 +107,8 @@ public class PlayerAnimation : MonoBehaviour
             chefLeftRenderer.material = materials[1]; // Change Left Hand
             chefWeaponHandleRenderer.material = materials[1]; // Change Weapon Handle
             chefHeadRenderer.material = materials[1]; // Change Head
+            chefWeaponRollerRenderer.material = materials[1]; // Change Roller
+            chefHatRenderer.material = materials[1]; // Change Hat
             // Debug.Log("Material changed to Material 2.");
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -90,6 +118,8 @@ public class PlayerAnimation : MonoBehaviour
             chefLeftRenderer.material = materials[2]; // Change Left Hand
             chefWeaponHandleRenderer.material = materials[2]; // Change Weapon Handle
             chefHeadRenderer.material = materials[2]; // Change Head
+            chefWeaponRollerRenderer.material = materials[2]; // Change Roller
+            chefHatRenderer.material = materials[2]; // Change Hat
             // Debug.Log("Material changed to Material 3.");
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
@@ -99,7 +129,31 @@ public class PlayerAnimation : MonoBehaviour
             chefLeftRenderer.material = materials[3]; // Change Left Hand
             chefWeaponHandleRenderer.material = materials[3]; // Change Weapon Handle
             chefHeadRenderer.material = materials[3]; // Change Head
+            chefWeaponRollerRenderer.material = materials[3]; // Change Roller
+            chefHatRenderer.material = materials[3]; // Change Hat
             // Debug.Log("Material changed to Material 4.");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5) || playerController.playerState == 4)
+        {
+            chefBodyRenderer.material.color = Color.red; // Change Body
+            chefRightRenderer.material.color = Color.red; // Change Right Hand
+            chefLeftRenderer.material.color = Color.red; // Change Left Hand
+            chefWeaponHandleRenderer.material.color = Color.red; // Change Weapon Handle
+            chefHeadRenderer.material.color = Color.red; // Change Head
+            chefWeaponRollerRenderer.material.color = Color.red; // Change Roller
+            chefHatRenderer.material.color = Color.red; // Change Hat
+            // Debug.Log("Material changed to Material 5.");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6) || playerController.playerState == 5)
+        {
+            chefBodyRenderer.material.color = originalColor; // Change Body
+            chefRightRenderer.material.color = originalColor; // Change Right Hand
+            chefLeftRenderer.material.color = originalColor; // Change Left Hand
+            chefWeaponHandleRenderer.material.color = originalColor; // Change Weapon Handle
+            chefHeadRenderer.material.color = originalColor; // Change Head
+            chefWeaponRollerRenderer.material.color = originalColor; // Change Roller
+            chefHatRenderer.material.color = originalColor; // Change Hat
+            // Debug.Log("Material changed to Material 5.");
         }
         #endregion
     }
