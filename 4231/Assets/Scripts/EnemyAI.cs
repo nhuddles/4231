@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
     public Transform player; // Reference to the player object
     public float chaseRange = 100f; // Range within which the enemy will start chasing the player
     public float attackRange = 5f; // Range within which the enemy will attack the player
-    public float chaseSpeed = 3f; // Speed of chasing
+    public float chaseSpeed = 2f; // Speed of chasing
     public float attackDelay = 1f; // Delay between attacks
     public float patrolRadius = 25f; // Radius of the circular patrol path
     public float patrolSpeed = 2f; // Speed of patrolling

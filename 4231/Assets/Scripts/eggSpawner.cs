@@ -26,31 +26,57 @@ public class eggSpawner : MonoBehaviour
     public int minRange = 5;
     public int maxRange = 20;
 
+    public int timeBetweenSpawningCTR;
+
     public TMP_Text waveText;
     public int totalEnemies;
     public TMP_Text enemiesLeftText;
+    public TMP_Text gameStatusText;
+    public GameObject gameStatusScreen;
+    public GameObject debugUI;
+    public GameObject skipWaveBtn;
+    public GameObject gameUI;
 
     IEnumerator TimeBetweenWaves() // Set Time Between Waves
     {
         waveText.gameObject.SetActive(true);
         enemiesLeftText.gameObject.SetActive(false);
         waveText.text = "Wave " + (currentWave + 1);
+
         yield return new WaitForSeconds(5);
         enemiesLeftText.gameObject.SetActive(true);
         enemiesLeftText.text = "Enemies Left: " + totalEnemies;
+
         SpawnWave();
     }
 
     IEnumerator TimeBetweenSpawning(int i) // Make Enemies Not Spawn All At The Same Time
     {
-        int randomNumber = Random.Range(5, 10);
-        yield return new WaitForSeconds(randomNumber);
+        if (timeBetweenSpawningCTR > 1)
+        {
+            int randomNumber = Random.Range(5, 10);
+            // Debug.Log("Current Wave: " + currentWave);
+            if (currentWave > 3)
+            {
+                randomNumber = Random.Range(15, 30);
+            }
+            // Debug.Log("Random Number: " + randomNumber);
+            yield return new WaitForSeconds(randomNumber);
+        }
+
+        if (timeBetweenSpawningCTR + 1 == waves[currentWave].GetMonsterSpawnList().Length)
+        {
+            skipWaveBtn.gameObject.SetActive(true);
+        }
         SpawnEgg(i);
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        debugUI.gameObject.SetActive(false);
+        skipWaveBtn.gameObject.SetActive(false);
+
         StartCoroutine(TimeBetweenWaves());
     }
 
@@ -69,9 +95,11 @@ public class eggSpawner : MonoBehaviour
 
         if (currentWave == 5)
         {
-            // Debug.Log("You Did It!");
-            waveText.text = "You Win!";
-            enemiesLeftText.gameObject.SetActive(false);
+            //Debug.Log("You Did It!" + currentWave);
+            gameStatusScreen.gameObject.SetActive(true);
+            gameStatusText.text = "YOU WIN!";
+            gameStatusText.color = Color.green;
+            gameUI.gameObject.SetActive(false);
         }
         else if (enemiesKilled == waves[currentWave].GetMonsterSpawnList().Length && currentWave < waves.Length)
         {
@@ -80,10 +108,27 @@ public class eggSpawner : MonoBehaviour
             currentWave++;
             StartCoroutine(TimeBetweenWaves());
         }
+
+
+        #region Wave System Cheat Codes
+        if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))
+        {
+            if (Input.GetKeyDown(KeyCode.Period))
+            {
+                debugUI.gameObject.SetActive(true);
+            }
+            else if (Input.GetKeyDown(KeyCode.Comma))
+            {
+                debugUI.gameObject.SetActive(false);
+            }
+        }
+        #endregion
+
     }
 
     void SpawnWave() // Spawn Wave
     {
+        timeBetweenSpawningCTR = 0;
         if (currentWave < waves.Length)
         {
             for (int i = 0; i < waves[currentWave].GetMonsterSpawnList().Length; i++)
@@ -95,7 +140,13 @@ public class eggSpawner : MonoBehaviour
 
     void SpawnEgg(int i) // Spawn Individual Egg
     {
-        Instantiate(waves[currentWave].GetMonsterSpawnList()[i], FindSpawnLoc(), Quaternion.identity);
+        // Debug.Log("SPAWNING");
+        timeBetweenSpawningCTR += 1;
+        // Debug.Log(timeBetweenSpawningCTR);
+        if (currentWave < 5)
+        {
+            Instantiate(waves[currentWave].GetMonsterSpawnList()[i], FindSpawnLoc(), Quaternion.identity);
+        }
     }
 
     Vector3 FindSpawnLoc() // Find Random Spawn Locaiton
@@ -140,5 +191,26 @@ public class eggSpawner : MonoBehaviour
         {
             return FindSpawnLoc();
         }
+    }
+
+
+    public void SkipWave()
+    {
+        Debug.Log("Skipping Wave...");
+        enemiesKilled = waves[currentWave].GetMonsterSpawnList().Length;
+
+        // Kill Nearby Eggs
+        float destroyDistance = 1000f;
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            // Destroy Eggs Near Player
+            float distanceToPlayer = Vector3.Distance(enemy.transform.position, player.position);
+            if (distanceToPlayer <= destroyDistance)
+            {
+                Destroy(enemy);
+            }
+        }
+        skipWaveBtn.gameObject.SetActive(false);
     }
 }
