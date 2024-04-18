@@ -21573,7 +21573,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26484787, y: -0.000000016591946, z: 0.0000000045570734, w: 0.9642902}
+  m_LocalRotation: {x: 0.26484787, y: 0.000000016591946, z: -0.0000000045570734, w: 0.9642902}
   m_LocalPosition: {x: 160, y: 31.34, z: 150.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -38664,7 +38664,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767423198}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26484787, y: -0.000000016591946, z: 0.0000000045570734, w: 0.9642902}
+  m_LocalRotation: {x: 0.26484787, y: 0.000000016591946, z: -0.0000000045570734, w: 0.9642902}
   m_LocalPosition: {x: 160, y: 31.34, z: 150.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -42479,6 +42479,9 @@ MonoBehaviour:
   src: {fileID: 1934205073}
   attackSound: {fileID: 8300000, guid: 1dcf171078d8c064596604f30826fb5f, type: 3}
   jumpSound: {fileID: 8300000, guid: a653ed39ca260aa4986a6f83bdaa6440, type: 3}
+  damageSound: {fileID: 8300000, guid: 14e353acd4f3c6245b1b726795fa6b58, type: 3}
+  deathSound: {fileID: 8300000, guid: fddacb979410feb4eb78bbe1c7fc33cd, type: 3}
+  fallSound: {fileID: 8300000, guid: 55a54302ca60acd4db247a831063e35e, type: 3}
   enemyAI: {fileID: 1919797132}
   gameOverScreen: {fileID: 2130581331}
   gameUI: {fileID: 1170449695}

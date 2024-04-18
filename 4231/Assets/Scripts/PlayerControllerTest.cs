@@ -14,7 +14,7 @@ public class PlayerControllerTest : MonoBehaviour
     public TMP_Text healthText;
     public RawImage healthBar;
     public AudioSource src;
-    public AudioClip attackSound, jumpSound;
+    public AudioClip attackSound, jumpSound, damageSound, deathSound, fallSound;
     
     public EnemyAI enemyAI;
     int ctrDeath;
@@ -133,6 +133,8 @@ public class PlayerControllerTest : MonoBehaviour
         // Cause Damage to Player When Colliding With Enemy
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            src.clip = damageSound;
+            src.Play();
             int ctr = 0;
             playerState = 4; // Cause Red Effect
             health -= 5; // Remove Health
@@ -160,6 +162,8 @@ public class PlayerControllerTest : MonoBehaviour
         // Kill Player When Outside Bounds of Table
         if (collision.gameObject.CompareTag("PlayerDead"))
         {
+            src.clip = fallSound;
+            src.Play();
             //animator.SetTrigger("Death");
             gameOver();
         }
@@ -179,14 +183,16 @@ public class PlayerControllerTest : MonoBehaviour
         {
             animator.SetTrigger("Death");
             ctrDeath = 1;
+            src.clip = deathSound;
+            src.Play();
         }
-
+        
         // Ensure Health is at 0
         health = 0;
-
+        
         // Disable Movement
         canMove = false;
-
+        StartCoroutine(DeactivatePlayerAfterDelay(3f));
         // Kill Nearby Eggs
         float destroyDistance = 1000f;
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
@@ -197,15 +203,23 @@ public class PlayerControllerTest : MonoBehaviour
             if (distanceToPlayer <= destroyDistance)
             {
                 Destroy(enemy);
+            
             }
+    
         }
-
+        
         gameStatusText.text = "GAME OVER";
         gameStatusText.color = Color.red;
         gameOverScreen.gameObject.SetActive(true);
         gameUI.gameObject.SetActive(false);
-    }
 
+         
+    }
+    IEnumerator DeactivatePlayerAfterDelay(float delay)
+    {
+    yield return new WaitForSeconds(delay);
+    gameObject.SetActive(false);
+    }
 
     #region Button Methods
     public void RestartGame()
