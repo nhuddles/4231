@@ -1,12 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerAnimation : MonoBehaviour
 {
     public Animator animator;
     public PlayerControllerTest playerController;
     public Color originalColor;
+
+    public RawImage playerIconSlot;
+    public Texture[] playerIcons;
+
+    public RawImage weaponIconSlot;
+    public Texture[] weaponIcons;
+
+    public RawImage healthIconSlot;
+    public Texture[] healthIcons;
 
     #region Changing Material/Texture of Chef Variables
     // Texture Changing
@@ -99,6 +109,9 @@ public class PlayerAnimation : MonoBehaviour
             chefWeaponRollerRenderer.material = materials[0]; // Change Roller
             chefHatRenderer.material = materials[0]; // Change Hat
             // Debug.Log("Material changed to Material 1.");
+            playerIconSlot.texture = playerIcons[0];
+            weaponIconSlot.texture = weaponIcons[0];
+            healthIconSlot.texture = healthIcons[0];
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
@@ -110,6 +123,9 @@ public class PlayerAnimation : MonoBehaviour
             chefWeaponRollerRenderer.material = materials[1]; // Change Roller
             chefHatRenderer.material = materials[1]; // Change Hat
             // Debug.Log("Material changed to Material 2.");
+            playerIconSlot.texture = playerIcons[1];
+            weaponIconSlot.texture = weaponIcons[1];
+            healthIconSlot.texture = healthIcons[1];
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
@@ -121,6 +137,9 @@ public class PlayerAnimation : MonoBehaviour
             chefWeaponRollerRenderer.material = materials[2]; // Change Roller
             chefHatRenderer.material = materials[2]; // Change Hat
             // Debug.Log("Material changed to Material 3.");
+            playerIconSlot.texture = playerIcons[2];
+            weaponIconSlot.texture = weaponIcons[2];
+            healthIconSlot.texture = healthIcons[2];
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
@@ -132,6 +151,9 @@ public class PlayerAnimation : MonoBehaviour
             chefWeaponRollerRenderer.material = materials[3]; // Change Roller
             chefHatRenderer.material = materials[3]; // Change Hat
             // Debug.Log("Material changed to Material 4.");
+            playerIconSlot.texture = playerIcons[3];
+            weaponIconSlot.texture = weaponIcons[3];
+            healthIconSlot.texture = healthIcons[3];
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5) || playerController.playerState == 4)
         {

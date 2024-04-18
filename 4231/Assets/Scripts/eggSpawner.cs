@@ -45,7 +45,7 @@ public class eggSpawner : MonoBehaviour
 
         yield return new WaitForSeconds(5);
         enemiesLeftText.gameObject.SetActive(true);
-        enemiesLeftText.text = "Enemies Left: " + totalEnemies;
+        enemiesLeftText.text = "Eggs Left: " + totalEnemies;
 
         SpawnWave();
     }
@@ -91,7 +91,7 @@ public class eggSpawner : MonoBehaviour
             totalEnemies = waves[currentWave].GetMonsterSpawnList().Length;
         }
 
-        enemiesLeftText.text = "Enemies Left: " + (totalEnemies - enemiesKilled);
+        enemiesLeftText.text = "Eggs Left: " + (totalEnemies - enemiesKilled);
 
         if (currentWave == 5)
         {

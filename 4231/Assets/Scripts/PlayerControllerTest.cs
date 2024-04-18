@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerControllerTest : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerControllerTest : MonoBehaviour
     public bool canMove = true;
     public int health;
     public TMP_Text healthText;
+    public RawImage healthBar;
 
     public EnemyAI enemyAI;
     int ctrDeath;
@@ -133,9 +135,21 @@ public class PlayerControllerTest : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             int ctr = 0;
-            playerState = 4;
-            health -= 5;
-            // Debug.Log("Player hAs been hit :(");
+            playerState = 4; // Cause Red Effect
+            health -= 5; // Remove Health
+
+            // Decrease Health Bar
+            if (health >= 0 && health <= 100)
+            {
+                // Decrease position
+                RectTransform rectTransform = healthBar.GetComponent<RectTransform>();
+                rectTransform.position -= new Vector3(7f, 0f, 0f);
+
+                // Decrease width
+                rectTransform.sizeDelta -= new Vector2(7f, 0f);
+            }
+            
+
             while (ctr < 50)
             {
                 transform.Translate(Vector3.back * 2.5f * Time.deltaTime);
