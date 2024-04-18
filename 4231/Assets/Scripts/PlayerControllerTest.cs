@@ -13,7 +13,8 @@ public class PlayerControllerTest : MonoBehaviour
     public int health;
     public TMP_Text healthText;
     public RawImage healthBar;
-
+    public AudioSource attackSound;
+    
     public EnemyAI enemyAI;
     int ctrDeath;
 
@@ -65,17 +66,11 @@ public class PlayerControllerTest : MonoBehaviour
         }
         #region Animation Triggering Test
         
-        /*// Attacking with Left-Click
+        // Attacking with Left-Click
         if (Input.GetMouseButtonDown(0))
         {
-            while (pastAttack == randomAttack) // Ensure there is a different attack animation
-            {
-                randomAttack = Random.Range(1, 4);
-            }
-            pastAttack = randomAttack;
-            animator.SetInteger("Attack", randomAttack);
-            animator.ResetTrigger("Dance");
-        } */
+            attackSound.Play();
+        } 
 
         // Dancing with P
         if (Input.GetKeyDown(KeyCode.P))
@@ -103,6 +98,7 @@ public class PlayerControllerTest : MonoBehaviour
         #region Jumping
         if ((Input.GetKeyDown(KeyCode.Space) && isOnGround) && canMove)
         {
+            
             playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
             animator.SetTrigger("Jump");
