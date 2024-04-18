@@ -18226,27 +18226,6 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 1
   m_Events:
-  - time: 0
-    functionName: 
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0
-    functionName: 
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 1dcf171078d8c064596604f30826fb5f, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0
-    functionName: 
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 1dcf171078d8c064596604f30826fb5f, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 0.73333335
     functionName: ResetAttack
     data: 

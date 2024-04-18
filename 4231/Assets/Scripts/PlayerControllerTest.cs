@@ -13,7 +13,8 @@ public class PlayerControllerTest : MonoBehaviour
     public int health;
     public TMP_Text healthText;
     public RawImage healthBar;
-    public AudioSource attackSound;
+    public AudioSource src;
+    public AudioClip attackSound, jumpSound;
     
     public EnemyAI enemyAI;
     int ctrDeath;
@@ -69,7 +70,8 @@ public class PlayerControllerTest : MonoBehaviour
         // Attacking with Left-Click
         if (Input.GetMouseButtonDown(0))
         {
-            attackSound.Play();
+            src.clip = attackSound;
+            src.Play();
         } 
 
         // Dancing with P
@@ -98,7 +100,8 @@ public class PlayerControllerTest : MonoBehaviour
         #region Jumping
         if ((Input.GetKeyDown(KeyCode.Space) && isOnGround) && canMove)
         {
-            
+            src.clip = jumpSound;
+            src.Play(); 
             playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
             animator.SetTrigger("Jump");
