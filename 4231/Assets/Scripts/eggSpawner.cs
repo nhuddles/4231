@@ -37,6 +37,9 @@ public class eggSpawner : MonoBehaviour
     public GameObject skipWaveBtn;
     public GameObject gameUI;
 
+    public ParticleSystem particlePrefab;
+    private GameObject instantiatedParticle;
+
     IEnumerator TimeBetweenWaves() // Set Time Between Waves
     {
         waveText.gameObject.SetActive(true);
@@ -145,7 +148,13 @@ public class eggSpawner : MonoBehaviour
         // Debug.Log(timeBetweenSpawningCTR);
         if (currentWave < 5)
         {
-            Instantiate(waves[currentWave].GetMonsterSpawnList()[i], FindSpawnLoc(), Quaternion.identity);
+            Vector3 SpawnLoc = FindSpawnLoc();
+            //Debug.Log(SpawnLoc);
+
+            instantiatedParticle = Instantiate(particlePrefab, SpawnLoc, Quaternion.identity).gameObject;
+            Destroy(instantiatedParticle, 0.5f);
+
+            Instantiate(waves[currentWave].GetMonsterSpawnList()[i], SpawnLoc, Quaternion.identity);
         }
     }
 
@@ -179,7 +188,7 @@ public class eggSpawner : MonoBehaviour
         }
 
         // float yLoc = transform.position.y;
-        float yLoc = 1f;
+        float yLoc = 25.25f;
 
         SpawnPos = new Vector3(xLoc, yLoc, zLoc);
 

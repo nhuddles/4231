@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21573,7 +21573,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26484787, y: 0.000000016591946, z: -0.0000000045570734, w: 0.9642902}
+  m_LocalRotation: {x: 0.26484787, y: -0.000000016591946, z: 0.0000000045570734, w: 0.9642902}
   m_LocalPosition: {x: 160, y: 31.34, z: 150.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23698,6 +23698,7 @@ MonoBehaviour:
   attackDelay: 1
   patrolRadius: 3
   patrolSpeed: 2
+  particlePrefab: {fileID: 0}
 --- !u!135 &1048234938
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31610,6 +31611,7 @@ MonoBehaviour:
   attackDelay: 1
   patrolRadius: 3
   patrolSpeed: 2
+  particlePrefab: {fileID: 0}
 --- !u!54 &1392193481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32569,6 +32571,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1934205066}
+    - target: {fileID: 4962697223824798106, guid: 2b9123a262818ef4e8a126e933ed240c, type: 3}
+      propertyPath: particlePrefab
+      value: 
+      objectReference: {fileID: 7226583673155636403, guid: a2ab56839e1c9504ea9d141e95d0b16b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38664,7 +38670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767423198}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26484787, y: 0.000000016591946, z: -0.0000000045570734, w: 0.9642902}
+  m_LocalRotation: {x: 0.26484787, y: -0.000000016591946, z: 0.0000000045570734, w: 0.9642902}
   m_LocalPosition: {x: 160, y: 31.34, z: 150.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41639,6 +41645,7 @@ MonoBehaviour:
   debugUI: {fileID: 597782448}
   skipWaveBtn: {fileID: 60178461}
   gameUI: {fileID: 1170449695}
+  particlePrefab: {fileID: 3891973445508218817, guid: e190bf97c041e58448af6b043116cba0, type: 3}
 --- !u!4 &1916827189
 Transform:
   m_ObjectHideFlags: 0
@@ -41744,6 +41751,7 @@ MonoBehaviour:
   attackDelay: 1
   patrolRadius: 3
   patrolSpeed: 2
+  particlePrefab: {fileID: 0}
 --- !u!54 &1919797133
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42486,6 +42494,7 @@ MonoBehaviour:
   gameOverScreen: {fileID: 2130581331}
   gameUI: {fileID: 1170449695}
   gameStatusText: {fileID: 1808579989}
+  particlePrefab: {fileID: 1379504315796101638, guid: 3407e378c048bb5438424b28c7740b48, type: 3}
   animator: {fileID: 847211073}
   isOnGround: 1
   jumpForce: 7

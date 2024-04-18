@@ -23,6 +23,9 @@ public class PlayerControllerTest : MonoBehaviour
     public GameObject gameUI;
     public TMP_Text gameStatusText;
 
+    public ParticleSystem particlePrefab;
+    private GameObject instantiatedParticle;
+
     #region Animation Variables
     public Animator animator;
     private int pastAttack = 0;
@@ -70,9 +73,13 @@ public class PlayerControllerTest : MonoBehaviour
         // Attacking with Left-Click
         if (Input.GetMouseButtonDown(0))
         {
+            instantiatedParticle = Instantiate(particlePrefab, transform.position, Quaternion.identity).gameObject;
+            instantiatedParticle.transform.parent = transform;
+            instantiatedParticle.transform.localRotation = Quaternion.Euler(0f, -45f, 0f);
             src.clip = attackSound;
             src.Play();
-        } 
+            Destroy(instantiatedParticle, 1);
+        }
 
         // Dancing with P
         if (Input.GetKeyDown(KeyCode.P))

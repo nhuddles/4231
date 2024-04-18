@@ -16,6 +16,9 @@ public class EnemyAI : MonoBehaviour
     private Vector3 currentPatrolPoint;
     private float nextAttackTime = 0f;
 
+    public ParticleSystem particlePrefab;
+    private GameObject instantiatedParticle;
+
     enum State
     {
         Patrolling,
@@ -46,6 +49,8 @@ public class EnemyAI : MonoBehaviour
         {
             gameObject.transform.position = new Vector3(gameObject.transform.position.x, 25.25f, gameObject.transform.position.z);
             chaseSpeed = 0f;
+
+            StartCoroutine(ParticleAfterDeath());
         }
 
         // Look at the player
@@ -137,5 +142,15 @@ public class EnemyAI : MonoBehaviour
             // Debug.Log("Enemy attacks!");
             nextAttackTime = Time.time + attackDelay;
         }
+    }
+
+
+
+
+    IEnumerator ParticleAfterDeath()
+    {
+        yield return new WaitForSeconds(0.75f);
+        instantiatedParticle = Instantiate(particlePrefab, transform.position, Quaternion.identity).gameObject;
+        Destroy(instantiatedParticle, 0.5f);
     }
 }
