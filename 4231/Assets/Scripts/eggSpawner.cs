@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class eggSpawner : MonoBehaviour
 {
@@ -34,11 +35,15 @@ public class eggSpawner : MonoBehaviour
     public TMP_Text gameStatusText;
     public GameObject gameStatusScreen;
     public GameObject debugUI;
-    public GameObject skipWaveBtn;
+    public TMP_Text skipWaveText;
     public GameObject gameUI;
 
     public ParticleSystem particlePrefab;
     private GameObject instantiatedParticle;
+
+    private bool skippingWave;
+    private bool debugToggle;
+
 
     IEnumerator TimeBetweenWaves() // Set Time Between Waves
     {
@@ -69,7 +74,8 @@ public class eggSpawner : MonoBehaviour
 
         if (timeBetweenSpawningCTR + 1 == waves[currentWave].GetMonsterSpawnList().Length)
         {
-            skipWaveBtn.gameObject.SetActive(true);
+            skippingWave = true;
+            skipWaveText.gameObject.SetActive(true);
         }
         SpawnEgg(i);
     }
@@ -78,7 +84,7 @@ public class eggSpawner : MonoBehaviour
     void Start()
     {
         debugUI.gameObject.SetActive(false);
-        skipWaveBtn.gameObject.SetActive(false);
+        skipWaveText.gameObject.SetActive(false);
 
         StartCoroutine(TimeBetweenWaves());
     }
@@ -89,6 +95,12 @@ public class eggSpawner : MonoBehaviour
         // transform.position = player.position; // Make Spawner Be At Player Location
         //Debug.Log(waves[currentWave].GetMonsterSpawnList().Length);
 
+        // Press TAB when prompted in the Debug UI to Skip Waves
+        if (Input.GetKeyDown(KeyCode.Tab) && skippingWave && debugToggle)
+        {
+            SkipWave();
+        }
+
         if (currentWave < 5)
         {
             totalEnemies = waves[currentWave].GetMonsterSpawnList().Length;
@@ -98,7 +110,6 @@ public class eggSpawner : MonoBehaviour
 
         if (currentWave == 5)
         {
-            //Debug.Log("You Did It!" + currentWave);
             gameStatusScreen.gameObject.SetActive(true);
             gameStatusText.text = "YOU WIN!";
             gameStatusText.color = Color.green;
@@ -119,10 +130,12 @@ public class eggSpawner : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Period))
             {
                 debugUI.gameObject.SetActive(true);
+                debugToggle = true;
             }
             else if (Input.GetKeyDown(KeyCode.Comma))
             {
                 debugUI.gameObject.SetActive(false);
+                debugToggle = false;
             }
         }
         #endregion
@@ -143,13 +156,10 @@ public class eggSpawner : MonoBehaviour
 
     void SpawnEgg(int i) // Spawn Individual Egg
     {
-        // Debug.Log("SPAWNING");
         timeBetweenSpawningCTR += 1;
-        // Debug.Log(timeBetweenSpawningCTR);
         if (currentWave < 5)
         {
             Vector3 SpawnLoc = FindSpawnLoc();
-            //Debug.Log(SpawnLoc);
 
             instantiatedParticle = Instantiate(particlePrefab, SpawnLoc, Quaternion.identity).gameObject;
             Destroy(instantiatedParticle, 0.5f);
@@ -205,7 +215,7 @@ public class eggSpawner : MonoBehaviour
 
     public void SkipWave()
     {
-        Debug.Log("Skipping Wave...");
+        Debug.Log("Skipping Wave " + (currentWave + 1));
         enemiesKilled = waves[currentWave].GetMonsterSpawnList().Length;
 
         // Kill Nearby Eggs
@@ -220,6 +230,8 @@ public class eggSpawner : MonoBehaviour
                 Destroy(enemy);
             }
         }
-        skipWaveBtn.gameObject.SetActive(false);
+        skipWaveText.gameObject.SetActive(false);
+        skippingWave = false;
     }
+
 }

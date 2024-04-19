@@ -13,6 +13,9 @@ public class WeaponController : MonoBehaviour
     private int pastAttack = 0;
     private int randomAttack = 1;
 
+    public ParticleSystem particlePrefab;
+    private GameObject instantiatedParticle;
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -36,6 +39,11 @@ public class WeaponController : MonoBehaviour
         pastAttack = randomAttack;
         anim.SetInteger("Attack", randomAttack);
         anim.ResetTrigger("Dance");
+
+        instantiatedParticle = Instantiate(particlePrefab, transform.position, Quaternion.identity).gameObject;
+        instantiatedParticle.transform.parent = transform;
+        instantiatedParticle.transform.localRotation = Quaternion.Euler(0f, -315f, 180f);
+        Destroy(instantiatedParticle, 1);
 
         StartCoroutine(ResetAttackCooldown());
     }
