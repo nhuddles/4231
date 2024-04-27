@@ -44,6 +44,10 @@ public class eggSpawner : MonoBehaviour
     private bool skippingWave;
     private bool debugToggle;
 
+    public bool gameWin;
+
+    private int eggsLeft;
+
 
     IEnumerator TimeBetweenWaves() // Set Time Between Waves
     {
@@ -72,7 +76,7 @@ public class eggSpawner : MonoBehaviour
             yield return new WaitForSeconds(randomNumber);
         }
 
-        if (timeBetweenSpawningCTR + 1 == waves[currentWave].GetMonsterSpawnList().Length)
+        if (timeBetweenSpawningCTR + 1 == waves[currentWave].GetMonsterSpawnList().Length && eggsLeft != 0)
         {
             skippingWave = true;
             skipWaveText.gameObject.SetActive(true);
@@ -87,6 +91,8 @@ public class eggSpawner : MonoBehaviour
         skipWaveText.gameObject.SetActive(false);
 
         StartCoroutine(TimeBetweenWaves());
+
+        gameWin = false;
     }
 
     // Update is called once per frame
@@ -95,10 +101,18 @@ public class eggSpawner : MonoBehaviour
         // transform.position = player.position; // Make Spawner Be At Player Location
         //Debug.Log(waves[currentWave].GetMonsterSpawnList().Length);
 
+        eggsLeft = totalEnemies - enemiesKilled;
+
         // Press TAB when prompted in the Debug UI to Skip Waves
-        if (Input.GetKeyDown(KeyCode.Tab) && skippingWave && debugToggle)
+        if (Input.GetKeyDown(KeyCode.Tab) && skippingWave && debugToggle && eggsLeft != 0)
         {
             SkipWave();
+        }
+
+        if (eggsLeft == 0)
+        {
+            skippingWave = false;
+            skipWaveText.gameObject.SetActive(false);
         }
 
         if (currentWave < 5)
@@ -106,7 +120,8 @@ public class eggSpawner : MonoBehaviour
             totalEnemies = waves[currentWave].GetMonsterSpawnList().Length;
         }
 
-        enemiesLeftText.text = "Eggs Left: " + (totalEnemies - enemiesKilled);
+        
+        enemiesLeftText.text = "Eggs Left: " + eggsLeft;
 
         if (currentWave == 5)
         {
@@ -114,6 +129,7 @@ public class eggSpawner : MonoBehaviour
             gameStatusText.text = "YOU WIN!";
             gameStatusText.color = Color.green;
             gameUI.gameObject.SetActive(false);
+            gameWin = true;
         }
         else if (enemiesKilled == waves[currentWave].GetMonsterSpawnList().Length && currentWave < waves.Length)
         {

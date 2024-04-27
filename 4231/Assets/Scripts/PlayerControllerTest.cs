@@ -23,7 +23,7 @@ public class PlayerControllerTest : MonoBehaviour
     public GameObject gameUI;
     public TMP_Text gameStatusText;
 
-    
+    public eggSpawner eggSpawn;
 
     #region Animation Variables
     public Animator animator;
@@ -70,15 +70,16 @@ public class PlayerControllerTest : MonoBehaviour
         #region Animation Triggering Test
         
         // Attacking with Left-Click
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && canMove)
         {
             src.clip = attackSound;
             src.Play();
         }
 
         // Dancing with P
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P) || eggSpawn.gameWin)
         {
+            canMove = false;
             animator.SetTrigger("Dance");
         }
 

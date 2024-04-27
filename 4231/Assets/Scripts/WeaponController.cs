@@ -16,11 +16,14 @@ public class WeaponController : MonoBehaviour
     public ParticleSystem particlePrefab;
     private GameObject instantiatedParticle;
 
+    public PlayerControllerTest playerCT;
+
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (CanAttack)
+            if (CanAttack && playerCT.canMove)
             {
                 SwordAttack();
             }

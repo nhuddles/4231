@@ -16,6 +16,20 @@ public class EnemyAI : MonoBehaviour
     private Vector3 currentPatrolPoint;
     private float nextAttackTime = 0f;
 
+    #region Egg Variations
+    // Texture Changing
+    public Material[] materials;
+
+    // Access Bottom
+    private GameObject eggBottom;
+    private MeshRenderer eggBottomRenderer;
+
+    // Access Top
+    private GameObject eggTop;
+    private MeshRenderer eggTopRenderer;
+    #endregion
+
+
     public ParticleSystem particlePrefab;
     private GameObject instantiatedParticle;
 
@@ -33,6 +47,19 @@ public class EnemyAI : MonoBehaviour
         currentState = State.Patrolling;
         GeneratePatrolPoints();
         currentPatrolPoint = patrolPoints[0];
+
+        #region Access Egg Parts
+        eggBottom = transform.Find("bottom/cuboid").gameObject;
+        eggBottomRenderer = eggBottom.GetComponent<MeshRenderer>();
+
+        eggTop = transform.Find("top/cuboid_1").gameObject;
+        eggTopRenderer = eggTop.GetComponent<MeshRenderer>();
+        #endregion
+
+        #region Randomize Egg Colors
+        int randomInteger = Random.Range(0, 3);
+        changeEgg(randomInteger);
+        #endregion
     }
 
 
@@ -153,4 +180,11 @@ public class EnemyAI : MonoBehaviour
         instantiatedParticle = Instantiate(particlePrefab, transform.position, Quaternion.identity).gameObject;
         Destroy(instantiatedParticle, 0.5f);
     }
+
+    public void changeEgg(int index)
+    {
+        eggBottomRenderer.material = materials[index]; // Change Body
+        eggTopRenderer.material = materials[index]; // Change Right Hand
+    }
+
 }
